@@ -1,0 +1,26 @@
+.main-content-container{
+  position: relative;
+  top:50%;
+  transform: translateY(-10%);
+  .headline-container{
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    h1{
+      position: relative;
+      width:60%;
+      text-transform: uppercase;
+      // top:50%;
+      // transform:translateY(-50%);
+      text-decoration: underline;
+      padding-bottom:0;
+      margin-bottom:0;
+    }
+  }
+  .copy-container{
+
+    p{
+      color:$white;
+    }
+  }
+}

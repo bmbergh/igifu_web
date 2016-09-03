@@ -16,7 +16,7 @@ module.exports = {
     'webpack-hot-middleware/client',
     './src/app/main' // entry point of my app
   ],
-  
+
    /*
     * By default, thewebpack-dev-serverwill serve the files in the root of the project.
     * To serve files from a different folder (such as the "public" folder in our sample project,
@@ -81,6 +81,7 @@ module.exports = {
           'sass?sourceMap'
         )
       },
+      
     ],
   },
   sassLoader: {

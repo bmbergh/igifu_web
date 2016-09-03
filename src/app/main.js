@@ -6,6 +6,8 @@ import { Router, Route, hashHistory } from 'react-router';
 import Form from './containers/FormContainer';
 
 const store = configureStore();
+import 'styles/main.scss';
+
 
 render(
   <Provider store={store}>

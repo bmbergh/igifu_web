@@ -47,6 +47,7 @@
   "dependencies": {
     "hapi": "^13.4.2",
     "inert": "^4.0.0",
+    "json-loader": "^0.5.4",
     "react": "15.1.0",
     "react-dom": "15.1.0",
     "react-redux": "4.4.5",

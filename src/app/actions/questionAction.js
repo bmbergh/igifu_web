@@ -26,11 +26,42 @@ export function createQuestionError () {
 };
 
 export function createQuestionSuccess(question) {
+  console.log('question in action: ', question);
   return {
     type: 'CREATE_QUESTION_SUCCESS',
     payload: {
       question
     },
+  };
+};
+
+//FETCH QUESTION ************************
+export function fetchQuestions(questions) {
+  return dispatch => {
+    dispatch(attempt());
+    api.fetchQuestions(quesitons).then((result) => {
+			console.log('result in fetchQuestions: ', result);
+      dispatch(connectedApi()); //Call action that sets isFetching to false
+      dispatch(fetchQuestionsSuccess(result));
+    }).catch((error) => {
+    	dispatch(fetchQuestionsError(error));
+    });
+  };
+}
+
+//FETCH QUESTION SUCCESS ************************
+export function fetchQuestionsSuccess(questions) {
+  return {
+    type: 'FETCH_QUESTIONS_SUCCESS',
+    payload: { friends }
+  };
+};
+
+//FETCH QUESTION ERROR ************************
+export function fetchQuestionsError(error) {
+  return {
+    type: 'FETCH_QUESTIONS_ERROR',
+     payload: { error }
   };
 };
 

@@ -1,0 +1,18 @@
+.wrapper{
+  background:url(../public/img/background.png)no-repeat;
+  background-size: cover;
+  height:100vh;
+}
+.innerWrapper{
+  padding:10px 25px;
+}
+
+body{
+  font-family: 'Avenir';
+}
+
+h1{
+  font-size: 4.7em;
+  color:$white;
+  font-weight: 500;
+}
