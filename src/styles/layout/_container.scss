@@ -1,0 +1,55 @@
+.main-content-container{
+  position: relative;
+  width:60%;
+  // top:50%;
+  // transform: translateY(-10%);
+  .headline-container{
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    h1{
+      position: relative;
+      width:60%;
+      text-transform: uppercase;
+      // top:50%;
+      // transform:translateY(-50%);
+      // text-decoration: underline;
+      padding-bottom:0;
+      margin-bottom:0;
+    }
+  }
+  .copy-container{
+    position: absolute;
+    p{
+      color:$white;
+    }
+  }
+}
+
+.inputContainer{
+  position: absolute;
+  bottom:50px;
+  width:60%;
+  p{
+    color:$white;
+  }
+}
+.input{
+  border:none;
+  height:30px;
+  width:300px;
+  color:$pink;
+  border-radius: 10px;
+  padding-left:10px;
+}
+
+.button{
+  color:$white;
+  background: $pink;
+  border:none;
+  border-radius: 10px;
+  width:75px;
+  height:30px;
+  font-size: .8em;
+  margin-left:10px;
+}
