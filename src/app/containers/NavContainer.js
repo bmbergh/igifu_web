@@ -1,6 +1,6 @@
 import React from 'react';
 
-import logo from 'img/logo-app-with-name.png';
+import logo from 'img/logo-app-white.png';
 
 export default class NavContainer extends React.Component{
 

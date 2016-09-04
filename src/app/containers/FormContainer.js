@@ -4,9 +4,6 @@ import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 import Button from '../components/button';
 import Questions from '../components/questions';
-import Nav from '../containers/NavContainer';
-import Body_Copy from '../components/main_content';
-
 
   class FormContainer extends React.Component{
     constructor(props) {
@@ -21,18 +18,14 @@ import Body_Copy from '../components/main_content';
 
       return(
         <div>
-          <div className='innerWrapper'>
-            <Nav />
-            <Body_Copy />
-            <input
-              className='input'
-              placeholder='question'
-              type='text'
-              ref={(ref) => this.questionInput = ref}
-            />
-            <Button onClick={this.saveQuestionText} text='submit'/>
-            <Questions questions={questions} />
-          </div>
+          <input
+            className='input'
+            placeholder='question'
+            type='text'
+            ref={(ref) => this.questionInput = ref}
+          />
+          <Button onClick={this.saveQuestionText} text='submit'/>
+          <Questions questions={questions} />
         </div>
       )
     }

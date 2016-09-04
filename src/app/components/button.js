@@ -3,7 +3,7 @@ import React, { Component, Proptypes } from 'react';
 class Button extends React.Component{
   render(){
     return(
-      <button onClick = { this.props.onClick } >{this.props.text}</button>
+      <button className='button' onClick = { this.props.onClick } >{this.props.text}</button>
     )
   }
 }
